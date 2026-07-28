@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Naledi &amp; Tebo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="petal-field" id="petalField" aria-hidden="true"></div>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-photo">
+    <img src="images/photo1.jpg" alt="Naledi and Tebo smiling together">
+  </div>
+  <div class="hero-veil"></div>
+  <div class="hero-content">
+    <p class="eyebrow">a love, written down</p>
+    <h1 class="hero-names"><span>Naledi</span><span class="amp">&amp;</span><span>Tebo</span></h1>
+    <p class="hero-date">Together since April 23, 2025</p>
+
+    <div class="counter" id="counter" aria-live="polite">
+      <div class="counter-unit">
+        <span class="counter-num" id="c-years">0</span>
+        <span class="counter-label">years</span>
+      </div>
+      <div class="counter-unit">
+        <span class="counter-num" id="c-months">0</span>
+        <span class="counter-label">months</span>
+      </div>
+      <div class="counter-unit">
+        <span class="counter-num" id="c-days">0</span>
+        <span class="counter-label">days</span>
+      </div>
+      <div class="counter-unit small">
+        <span class="counter-num" id="c-hms">00:00:00</span>
+        <span class="counter-label">hrs&nbsp;:&nbsp;min&nbsp;:&nbsp;sec</span>
+      </div>
+    </div>
+    <p class="hero-sub">and every second, still counting</p>
+  </div>
+  <a href="#story" class="scroll-cue" aria-label="Scroll to our story">↓</a>
+</header>
+
+<!-- OUR STORY -->
+<section class="story" id="story">
+  <p class="section-eyebrow">how we got here</p>
+  <h2 class="section-title">Our Story</h2>
+
+  <div class="timeline">
+
+    <div class="tl-item" data-side="left">
+      <div class="tl-dot"></div>
+      <div class="tl-card">
+        <span class="tl-date">23 April 2025</span>
+        <h3>The Night at Unit 8</h3>
+        <p>The night we first hung out on that side of Unit 8 — the night that started everything. That was the night we first said <em>I love you</em>, and neither of us has stopped since.</p>
+      </div>
+    </div>
+
+    <div class="tl-item" data-side="right">
+      <div class="tl-dot"></div>
+      <div class="tl-card">
+        <span class="tl-date">the nights after</span>
+        <h3>Our Sleepovers</h3>
+        <p>The best time of our lives. Staying up too late, laughing over nothing, falling asleep mid-sentence — every sleepover since has felt like home.</p>
+      </div>
+    </div>
+
+    <div class="tl-item" data-side="left">
+      <div class="tl-dot"></div>
+      <div class="tl-card">
+        <span class="tl-date">a morning in Mogoditshane</span>
+        <h3>Breakfast, Made With Love</h3>
+        <p>The morning Tebo made breakfast for Naledi at Mogoditshane — small gesture, big memory. Still one of my favourite mornings.</p>
+      </div>
+    </div>
+
+    <div class="tl-item" data-side="right">
+      <div class="tl-dot"></div>
+      <div class="tl-card">
+        <span class="tl-date">every day since</span>
+        <h3>Still Choosing Each Other</h3>
+        <p>1 year, 3 months, and counting. Different days, same two people, still choosing each other every single time.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+  <p class="section-eyebrow">us, in pictures</p>
+  <h2 class="section-title">Moments</h2>
+
+  <div class="gallery-grid" id="galleryGrid">
+    <button class="g-item span-tall" data-full="images/photo1.jpg"><img src="images/photo1.jpg" alt="Cheek to cheek selfie"></button>
+    <button class="g-item" data-full="images/photo2.jpg"><img src="images/photo2.jpg" alt="Close selfie laughing"></button>
+    <button class="g-item" data-full="images/photo3.jpg"><img src="images/photo3.jpg" alt="Selfie in beanie"></button>
+    <button class="g-item span-wide" data-full="images/photo4.jpg"><img src="images/photo4.jpg" alt="Peace sign selfie"></button>
+    <button class="g-item" data-full="images/photo5.jpg"><img src="images/photo5.jpg" alt="Big smiles selfie"></button>
+    <button class="g-item" data-full="images/photo6.jpg"><img src="images/photo6.jpg" alt="Silly filter selfie"></button>
+    <button class="g-item span-tall" data-full="images/photo7.jpg"><img src="images/photo7.jpg" alt="Bundled up outdoors"></button>
+    <div class="g-item video-item">
+      <video src="images/video1.mp4" muted loop playsinline autoplay></video>
+      <span class="video-tag">video</span>
+    </div>
+    <button class="g-item" data-full="images/photo8.jpg"><img src="images/photo8.jpg" alt="Candid close-up"></button>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close image">&times;</button>
+  <img src="" alt="" id="lightboxImg">
+</div>
+
+<!-- LOVE NOTES -->
+<section class="notes" id="notes">
+  <p class="section-eyebrow">for you, N.</p>
+  <h2 class="section-title">Letters I Haven't Sent Yet</h2>
+  <p class="notes-intro">Every note you've ever written me, I keep. These are a few I never got around to giving back.</p>
+
+  <div class="envelope-grid" id="envelopeGrid">
+
+    <div class="envelope" tabindex="0">
+      <div class="envelope-face">
+        <div class="wax-seal">N</div>
+        <span class="envelope-label">the first night</span>
+      </div>
+      <div class="envelope-letter">
+        <p>I still think about that night at Unit 8. April 23rd. That was the night I first told you I loved you, and I meant it more than I'd ever meant anything. I'd say it again tonight if you let me.</p>
+        <span class="letter-sign">— Tebo</span>
+      </div>
+    </div>
+
+    <div class="envelope" tabindex="0">
+      <div class="envelope-face">
+        <div class="wax-seal">N</div>
+        <span class="envelope-label">our sleepovers</span>
+      </div>
+      <div class="envelope-letter">
+        <p>Our sleepovers are still the best time of my life. Not because of anything special we do — just because it's you, next to me, and that's enough to make an ordinary night feel like the best one.</p>
+        <span class="letter-sign">— Tebo</span>
+      </div>
+    </div>
+
+    <div class="envelope" tabindex="0">
+      <div class="envelope-face">
+        <div class="wax-seal">N</div>
+        <span class="envelope-label">mogoditshane morning</span>
+      </div>
+      <div class="envelope-letter">
+        <p>I still smile thinking about that breakfast I made you in Mogoditshane. Watching you eat it, half-asleep and happy, is one of my favourite memories of us. I'd cook for you every morning if I could.</p>
+        <span class="letter-sign">— Tebo</span>
+      </div>
+    </div>
+
+    <div class="envelope" tabindex="0">
+      <div class="envelope-face">
+        <div class="wax-seal">N</div>
+        <span class="envelope-label">your letters</span>
+      </div>
+      <div class="envelope-letter">
+        <p>Every letter and every note you've written me, I've kept. Whenever I miss you, I read them again, and it's like you're right here. Thank you for putting your heart on paper for me.</p>
+        <span class="letter-sign">— Tebo</span>
+      </div>
+    </div>
+
+    <div class="envelope" tabindex="0">
+      <div class="envelope-face">
+        <div class="wax-seal">N</div>
+        <span class="envelope-label">just because</span>
+      </div>
+      <div class="envelope-letter">
+        <p>Thank you for being you — patient with me, gentle with my heart, and endlessly beautiful inside and out. You are my favourite person and my favourite place. I love you, my beautiful N.</p>
+        <span class="letter-sign">— Tebo</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <p>Naledi &amp; Tebo — still writing our story, one day at a time.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
